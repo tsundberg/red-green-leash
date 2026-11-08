@@ -7,7 +7,7 @@
 AI coding assistants are fast, eager and confident. Left alone they write a lot of code, skip the tests, and present the result as done.
 These rules slow them down in the right places. The assistant must prove a test fails before it writes code, take one small step at a time, and stop to let a human decide what happens next.
 
-This is a snapshot of the rules I use every day while developing a product test first. They are not theory: they are what remained after many sessions where the assistant ran ahead and I had to pull it back.
+These rules are battle-tested in [LogEze](https://www.logeze.se). This is a snapshot of the rules I use every day while developing it test first. They are not theory: they are what remained after many sessions where the assistant ran ahead and I had to pull it back.
 
 ## The three principles
 
