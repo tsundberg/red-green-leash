@@ -21,20 +21,20 @@ Small steps keep the diff reviewable, the feedback loop short, and the way back 
 
 ### 3. Human in the loop
 The assistant proposes, the human decides.
-It stops at agreed checkpoints, such as after red, after green and before refactoring or committing, and waits for approval instead of carrying on.
+It stops at agreed checkpoints, such as before writing a test and after red, and waits for approval instead of carrying on.
 
 ## The loop
 
-1. 🔴 **Red** – write one failing test, run it, show the failure
-2. ✋ **Check in** – the human confirms that the test describes the right behaviour
-3. 🟢 **Green** – write the simplest code that makes the test pass, run all tests
-4. ✋ **Check in** – the human reviews the change
-5. 🔵 **Refactor** – clean up with all tests green
-6. 🔁 **Repeat** – pick the next small step
+1. 📝 **Test list** – list the planned tests by name, wait for approval
+2. ✋ **Propose** – present the next test on the list, wait for approval
+3. 🔴 **Red** – write it, run it, show the failure
+4. ✋ **Check in** – the human confirms the failure
+5. 🟢 **Green** – write the simplest code that makes the test pass, run all tests
+6. 🔵 **Refactor** – clean up with all tests green
+7. 📝 **Revise the list** – strike, add or reorder tests based on what the cycle taught, wait for approval if the list changed
+8. 🔁 **Repeat** – go back to step 2 with the next test on the list
 
 ## What's in here
-
-<!-- TODO: adjust to the actual files -->
 
 | File | Purpose |
 |---|---|
@@ -44,11 +44,11 @@ It stops at agreed checkpoints, such as after red, after green and before refact
 
 ## Getting started
 
-<!-- TODO: adjust to the actual files -->
-
 1. Copy the rule files into the root of your project.
 2. Adapt them to your stack: test command, language, conventions.
 3. Start your assistant and ask it for the next small step.
+
+The class names, file paths and helpers in the rules are illustrative examples, so they won't exist in your project. Replace them with your own, or build the equivalents.
 
 The rules are a starting point, not a standard. Remove what doesn't fit, sharpen what does, and add the rules your own project needs.
 
